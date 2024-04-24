@@ -1,23 +1,30 @@
-:root{
+:root{ /* custom properties */
     --main-paragraph-color: #42105b;
+    font-size: 14px;
 }
 
-#main-paragraph {
+#main-paragraph { /* for main p */
     color: var(--main-paragraph-color, red);
     margin: auto;
 }
 
+.jacquard-12-charted-regular { /* google font */
+    font-family: "Jacquard 12 Charted", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
 
-* {
+* { /* for all elements */
     margin: 2 2 2 2;
     padding: 5 5 5 5;
     box-sizing: border-box;
     background-color: cornflowerblue;
 }
 
-#minutes {
-    margin-top: 10px;
-    padding-top: 10px;
+#minutes { 
+    margin-top: 10mm;
+    padding-top: 1cm;
     border-top: 5px solid black;
 }
 
@@ -31,13 +38,18 @@ ol {
     border-bottom: 2px solid yellowgreen;
     border-left: 2px solid royalblue;
     border-right: 2px solid yellowgreen;
-    max-width: 500px;
+    max-width: 150vw;
+}
+
+body {
+    font-size: 14px;
 }
 
 h2{
     color: rgb(0, 53, 88);
     text-align: center;
     text-decoration: underline overline;
+    font-size: 2em;
 }
 
 h4{
@@ -51,6 +63,7 @@ nav {
     border-radius: 10px;
     min-width: auto;
     max-width: 500px;
+    margin: auto;
 }
 
 img {
@@ -78,5 +91,49 @@ p {
 }
 
 #last {
-    display: block;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "one two three"
+        "one two three";
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-column-gap: 50px;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: one;
+}
+
+.item-c {
+    grid-area: two;
+}
+
+.item-d {
+    grid-area: three;
+}
+
+button:hover {
+        background-color: greenyellow;
+}
+
+button:active {
+    background-color: lightcoral;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.useless {
+    display: none;
 }
