@@ -25,10 +25,6 @@
     color: color(display-p3 0.1 0.3 0.3);
 }
 
-nav {
-    background-color: aliceblue;
-}
-
 ol {
     color: color-mix(in srgb, black 50%, blue 50%);
     border-top: 2px solid royalblue;
@@ -39,7 +35,7 @@ ol {
 }
 
 h2{
-    color: rgb(0, 53, 88)
+    color: rgb(0, 53, 88);
     text-align: center;
     text-decoration: underline overline;
 }
