@@ -1,3 +1,25 @@
-p {
-    color: red;
+:root{
+    --main-paragraph-color: #ffa1a1;
+}
+
+#main-paragraph {
+    color: var(--main-paragraph-color, red);
+}
+
+
+
+.attendance {
+    color: color(display-p3 0 0.5 1);
+}
+
+ol {
+    color: color-mix(in srgb, black 50%, orange 50%);
+}
+
+h2{
+    color: rgb(208, 201, 1)
+}
+
+h4{
+    color: hsl(37, 100%, 45%)
 }
