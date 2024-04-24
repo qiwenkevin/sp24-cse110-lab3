@@ -9,6 +9,7 @@
         h1 {
             color: purple;
             text-align: center;
+            border: 5px solid purple;
         }
     </style>
   </head>
@@ -17,7 +18,6 @@
         <h1>Meeting Notes at the end of the universe</h1>
         <h2>Topic of the day: What's next?</h2>
         Sirius 42nd, 7903 Galactic Standard Year
-        <hr>
     </header>
     <nav>
         <h2>Contents:</h2>
@@ -26,7 +26,6 @@
             <li><a href="#agenda">Agenda</a></li>
             <li><a href="#minutes">Minutes</a></li>
         </ul>
-        <hr>
     </nav>
     <main>
         <section class="attendance" id="attendance">
@@ -42,17 +41,24 @@
         </section>
         <section id="agenda">
             <h2>Agenda</h2>
-            <h4>Points from Last Meeting</h4>
-            <ol>
-                <li>Tax Increase Protests</li>
-                <li>Unrest in the Outer Rim</li>
-            </ol>
-            <h4>New Points</h4>
-            <ol>
-                <li>Review of the current state of the Universe</li>
-                <li>Any Last Words</li>
-                <li>What's Next</li>
-            </ol>
+            <div id="agenda-box">
+                <div>
+                    <h4>Points from Last Meeting</h4>
+                    <ol>
+                        <li>Tax Increase Protests</li>
+                        <li>Unrest in the Outer Rim</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4>New Points</h4>
+                    <ol>
+                        <li>Review of the current state of the Universe</li>
+                        <li>Any Last Words</li>
+                        <li>What's Next</li>
+                    </ol>
+                </div>
+            </div>
+            
         </section>
         <section id="minutes">
             <h2>Minutes</h2>
@@ -75,12 +81,12 @@
         <section id="last">
             <h2>Bonus Content</h2>
             <img src="End.png" alt="The Universe">
-            <audio controls>
-                <source src="Democracy-Manifest.mp3" type="audio/mp3">
-            </audio>
             <video controls>
                 <source src="Democracy-Manifest.mp4" type="video/mp4">
             </video>
+            <audio controls>
+                <source src="Democracy-Manifest.mp3" type="audio/mp3">
+            </audio>
         </section>
         <form>
             <fieldset>

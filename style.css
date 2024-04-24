@@ -1,25 +1,79 @@
 :root{
-    --main-paragraph-color: #ffa1a1;
+    --main-paragraph-color: #42105b;
 }
 
 #main-paragraph {
     color: var(--main-paragraph-color, red);
+    margin: auto;
 }
 
+* {
+    margin: 2 2 2 2;
+    padding: 5 5 5 5;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+}
 
+#minutes {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 5px solid black;
+}
 
 .attendance {
-    color: color(display-p3 0 0.5 1);
+    color: color(display-p3 0.1 0.3 0.3);
 }
 
 ol {
-    color: color-mix(in srgb, black 50%, orange 50%);
+    color: color-mix(in srgb, black 50%, blue 50%);
+    border-top: 2px solid royalblue;
+    border-bottom: 2px solid yellowgreen;
+    border-left: 2px solid royalblue;
+    border-right: 2px solid yellowgreen;
+    max-width: 500px;
 }
 
 h2{
-    color: rgb(208, 201, 1)
+    color: rgb(0, 53, 88)
 }
 
 h4{
-    color: hsl(37, 100%, 45%)
+    color: hsl(253, 87%, 20%)
+}
+
+nav {
+    border-color: slateblue;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+    min-width: auto;
+    max-width: 500px;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+video {
+    width: 500px;
+    height: 300px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+p {
+    position: static;
+}
+
+#agenda-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#last {
+    display: block;
 }
