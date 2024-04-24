@@ -6,10 +6,12 @@
     color: var(--main-paragraph-color, red);
 }
 
-
-
 .attendance {
     color: color(display-p3 0 0.5 1);
+}
+
+nav {
+    background-color: aliceblue;
 }
 
 ol {
@@ -17,9 +19,12 @@ ol {
 }
 
 h2{
-    color: rgb(208, 201, 1)
+    color: rgb(208, 201, 1);
+    text-align: center;
+    text-decoration: underline overline;
 }
 
 h4{
     color: hsl(37, 100%, 45%)
 }
+
