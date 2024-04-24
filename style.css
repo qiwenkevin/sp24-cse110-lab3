@@ -3,6 +3,19 @@
     font-size: 14px;
 }
 
+@media (max-width: 10cm) {
+    header {
+      position:static;
+    }
+}
+
+@media (min-width: 10cm) {
+    header {
+      position: sticky;
+      top: 0;
+    }
+}
+
 #main-paragraph { /* for main p */
     color: var(--main-paragraph-color, red);
     margin: auto;
@@ -30,6 +43,9 @@
 
 .attendance {
     color: color(display-p3 0.1 0.3 0.3);
+    & h2{
+        color:rgb(0, 193, 167);
+    }
 }
 
 ol {
@@ -53,7 +69,7 @@ h2{
 }
 
 h4{
-    color: hsl(253, 87%, 20%)
+    color: hsl(253, 87%, 20%);
 }
 
 nav {
@@ -66,19 +82,9 @@ nav {
     margin: auto;
 }
 
-img {
+img, video {
     width: 500px;
     height: 300px;
-}
-
-video {
-    width: 500px;
-    height: 300px;
-}
-
-header{
-    position: sticky;
-    top: 0;
 }
 
 p {
@@ -136,4 +142,32 @@ button:active {
 
 .useless {
     display: none;
+}
+
+[attribute="agenda"]{
+    color: lightblue;
+}
+
+li li {
+    color: white;
+}
+
+header > p {
+    color: lightblue;
+}
+
+h1 + h2 {
+    color: black;
+}
+
+li ~ li {
+    color: royalblue;
+}
+
+h2.content-title {
+    color: royalblue;
+}
+
+li:has(> ul){
+    color: purple;
 }
